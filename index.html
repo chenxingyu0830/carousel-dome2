@@ -8,18 +8,29 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-  <div class="window">
-    <div class="images">
-      <img src="./img/1.jpg" alt="图片" width="400" height="300">
-      <img src="./img/2.jpg" alt="图片" width="400" height="300">
-      <img src="./img/3.jpg" alt="图片" width="400" height="300">
-      <!-- <img src="./img/4.jpg" alt="图片" width="400" height="300">
-      <img src="./img/5.jpg" alt="图片" width="400" height="300"> -->
-    </div>
+  <div class="container">
+    <div class="window">
+        <div id="slides" class="images">
+          <img src="./img/1.jpg" alt="图片" width="400" height="300">
+          <img src="./img/2.jpg" alt="图片" width="400" height="300">
+          <img src="./img/3.jpg" alt="图片" width="400" height="300">
+          <img src="./img/4.jpg" alt="图片" width="400" height="300">
+          <img src="./img/5.jpg" alt="图片" width="400" height="300">
+        </div>
+      </div>
+      <div id="controls" class="controls">
+          <button id="previous">上一张</button>
+          <button id="next">下一张</button>
+      </div>
+      <div id="buttonWrapper" class="buttonWrapper">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>
+      <script src="./jquery-3.3.1.min.js"></script>
+      <script src="./main.js"></script>
   </div>
-
-  <script src="./jquery-3.3.1.min.js"></script>
-  <script src="./main.js"></script>
 </body>
 </html>

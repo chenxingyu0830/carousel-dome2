@@ -2,29 +2,23 @@
  *{box-sizing: border-box;}
 
  .window{
-   width: 400px;
-   height: 300px;
-   margin: 20px auto;
-   overflow: hidden;
+  width: 400px;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
  }
  .images{
-   position: relative;
+  display: flex;
+  transition: all 1s;
  }
  .images > img{
-   width: 100%;
-   transition: all 1s;
-   position: absolute;
-   top: 0;
+  width: 100%;
  }
-.images > img.current{
-  left: 0;
-  transform: translateX(0);
-  z-index: 1;
-}
-.images > img.leave{
-  transform: translateX(-100%);
-  z-index: 1;
-} 
-.images > img.enter{
-  transform: translateX(100%);
-}
+ .buttonWrapper{
+  padding: 10px;
+  text-align: center;
+ }
+ .controls{
+  padding: 10px;
+  text-align: center;
+ }
